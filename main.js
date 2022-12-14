@@ -1,1 +1,6 @@
-var realWindow = window.parent.index || window; Attach event listeners  realWindow.addEventListener(    "keydown", key.downHandler.bind(key), false  );  realWindow.addEventListener(    "keyup", key.upHandler.bind(key), false  );
+var iframe = document.getElementById('myIFrame');
+iframe.contentDocument.body.addEventListener('mouseup', Handler);
+
+function Handler() {
+    alert('works');
+}
