@@ -1,10 +1,13 @@
 <iframe id="MyIFrame" frameborder="0" width="100%" height="500px" src="https://betterpppoopoo.moohawk.repl.co/?v=1/?embed=true"></iframe>
 
 <script>
-var iframe = document.getElementById('MyIFrame');
-iframe.contentDocument.body.addEventListener('keydown', Handler);
+window.myIframe = document.getElementById("MyIFrame").contentWindow;
+window.addEventListener("keydown", function(evt) { myIframe.myKeydownEventHandler(evt); alert('works');});
+    
 
 function Handler() {
     alert('works');
 }
+    
+
 </script>
