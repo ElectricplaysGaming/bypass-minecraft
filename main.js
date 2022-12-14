@@ -1,1 +1,1 @@
-var realWindow = window.parent || window; Attach event listeners  realWindow.addEventListener(    "keydown", key.downHandler.bind(key), false  );  realWindow.addEventListener(    "keyup", key.upHandler.bind(key), false  );
+var realWindow = window.parent.index || window; Attach event listeners  realWindow.addEventListener(    "keydown", key.downHandler.bind(key), false  );  realWindow.addEventListener(    "keyup", key.upHandler.bind(key), false  );
